@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"> </script>
+    <title>Projects</title>
+</head>
+
+
+<body>
+    
+    
+    <a class="back" href="../../../index.html" target="_blank" > <i class="uil uil-backspace"></i></a>
+    
+    
+    <main>
+        <section class="main">
+
+                <h1 class="titulo">Compilador</h1>
+
+                <h2 class="descripcion">El siguiente documento sustenta todo el desarrollo del traductor para la gramática Vulcan. Este documento está divido en tres secciones: Análisis Léxico, Análisis Sintáctico y Análisis semántico. En cada sección se explicará el módulo con las clases correspondientes. Debemos precisar que este documento es un conglomerado de todos los documentos anteriores; sin embargo, está adaptado de tal forma que evita la redundancia.
+                    También es importante decir que el software cuenta con dos módulos, es decir, dos partes. Un analizador léxico y un analizador sintáctico; el semántico se encuentra incluido dentro del sintáctico.
+                    </h1>
+
+        </section>
+        
+        <div class="container">
+            <figure class="card">
+                <img src="vista1.PNG" alt="">
+                <figcaption>La clase Vista hace referencia al Menú principal. Es la primera interfaz que visualizaremos cuando ejecutemos el programa. En esta interfaz deberemos ingresar un texto o podemos cargarlo a partir de un archivo de texto plano con el botón de carga. Luego debemos invocar al Analizador Léxico para obtener los tokens y por último debemos llamar al sintáctico para validar la sintaxis. Los componentes se explican en la siguiente imagen</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="vista2.PNG" alt="">
+                <figcaption>La clase TablaSimbolos o SymbolTable es una clase para visualizar la tabla de símbolos. Aquí se muestra el resumen de todos los tokens leídos por nuestro Analizador Léxico. En esta clase no tenemos nada que explicar ya que es solo para visualizar, es decir no hay interacción con el usuario.</figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="vista3.PNG" alt="">
+                <figcaption>Es la interfaz invocada después de finalizar el análisis sintáctico, este se mostrará todo el proceso que ha realizado el programa para determinar si la entrada es válida o no. En la siguiente imagen se muestra la interfaz mostrando el proceso para validar cierta entrada.</figcaption>
+            </figure>
+        </div>
+
+    </main>
+
+    <script >
+        const $back = document.querySelector(".back")
+
+        document.addEventListener("click", (e)=>{
+            
+            if(e.target.matches(".back i")){
+                window.close()
+            }
+        })
+
+        const $radio = document.getElementById("radio");
+        const $li = document.querySelectorAll("li img");
+        $radio.onchange = (e) =>{
+            
+            $li.forEach(element => {
+                console.log(element.style.width)
+                //console.log(element.style.width = `${radio.value}px`)
+            });
+
+        }
+        
+
+        
+    </script>
+</body>
+</html>
