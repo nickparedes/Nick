@@ -4,8 +4,28 @@
 
 html{
     background: #111111;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: linear-gradient(to left, var(--bg-base-color) 20%, var(--bg-level-1-color) 75%);
 }
 
-.primary{
-    background: red;
+:root {
+    //Colors
+    --bg-base-color: #000000;
+    --bg-level-1-color: #181823;
+    --bg-light-grey-color:#DEECF9;
+    --bg-dark-grey-color:#C7E0F4;
+    --tx-text-color: #ffffff;
+    --tx-primary-color: #5221E6;
+    --tx-green-accent-color: #3CC74E;
+    --tx-pink-accent-color: #E95D90;
+    --main-peach-accent-color: #FFF3E4;
+    --main-violent-accent-color: #FBE4FF;
+
+}
+
+.all-bg-primary{
+    background: var(--tx-primary-color);
+    color: var(--tx-text-color);
+    opacity: 1 !important;
 }

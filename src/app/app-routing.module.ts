@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HomePageComponent,
     loadChildren: () => import('./modules/layout/home.module').then(m => m.HomeModule)
   },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/portfolio', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -1,0 +1,12 @@
+div a, ul,li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--tx-text-color);
+    opacity: 0.7;
+    padding: 0 20px;
+    text-wrap: nowrap;
+}
