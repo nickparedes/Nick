@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { theme } from 'src/app/shared/constant';
+import { language, theme } from 'src/app/shared/constant';
 import { LocalStorageService } from 'src/app/shared/services/local-storage.service';
 
 @Component({
@@ -13,5 +13,6 @@ export class HomePageComponent implements OnInit{
 
     ngOnInit(): void {
         this.localStorage.setLocalStorage('theme', theme.light);
+        this.localStorage.setLocalStorage('language', language.english);
     }
 }

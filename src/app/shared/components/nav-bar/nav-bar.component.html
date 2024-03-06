@@ -1,6 +1,5 @@
 <section
-  style="height: 88xd"
-  class="flex justify-between content-center flex-wrap w-[1800px] h-20 px-10 absolute"
+  class="flex justify-between content-center flex-wrap w-full max-w-[1900px] h-[88px] px-10 fixed"
 >
   <div class="flex content-center">
     <a class="home inicio">
@@ -21,7 +20,7 @@
   <div class="h-full">
     <ul id="d-menu" class="flex justify-between" #navBar>
       <li *ngFor="let item of menuItem">
-        <a  href="portfolio#{{item.id}}" [routerLinkActive]="['all-bg-primary']" (click)="menuActive(item.id)" >{{ item.name }}</a>
+        <a  href="portfolio#{{item.id}}" [routerLinkActive]="['all-bg-primary']" [ngClass]="{'all-bg-primary': item.id=== 'contact-me'}" (click)="menuActive(item.id)" >{{ item.name }}</a>
       </li>
     </ul>
   </div>
