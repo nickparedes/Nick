@@ -77,6 +77,10 @@ export const text = {
                 {img:'https://source.unsplash.com/category/nature/', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
             ],
             ButtonText: 'View all projects',
+        },
+        icebreakersComponent: {
+            Title: 'Work that I’ve done for the past 8 years',
+            SubTitle:'MY PROJECTS',
         }
     },
     english:{
@@ -141,6 +145,10 @@ export const text = {
                 {img:'https://source.unsplash.com/category/nature/', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
             ],
             ButtonText: 'View all projects',
+        },
+        icebreakersComponent: {
+            Title: 'Work that I’ve done for the past 8 years',
+            SubTitle:'MY PROJECTS',
         }
     }
 }
