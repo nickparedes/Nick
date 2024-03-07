@@ -29,3 +29,11 @@ html{
     color: var(--tx-text-color);
     opacity: 1 !important;
 }
+
+
+.button{
+    background: var(--bg-base-color);
+    border: 2px solid var(--tx-primary-color);
+    color: var(--tx-text-color)
+   
+}

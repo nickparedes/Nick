@@ -20,3 +20,9 @@ export interface menuItem{
     id: string,
     active: boolean,
 }
+
+export interface CardProject{
+    img: string,
+    title: string,
+    description: string,
+}

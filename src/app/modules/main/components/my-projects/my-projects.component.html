@@ -1,0 +1,20 @@
+<section class="flex flex-wrap max-w-[1900px] gap-4 justify-around py-16 px-8 md:py-32 md:px-16">
+    <div>
+        <div class="max-w-[636px] max-h-[200px] p-4">
+            <h3 class="text-base md:text-lg text-light-grey-color">{{text.myProjectsComponent.SubTitle}}</h3>
+            <h2 class="text-3xl md:text-6xl text-text-color pb-1">{{text.myProjectsComponent.Title}}</h2>
+        </div>
+    
+        <app-card-project *ngFor="let item of text.myProjectsComponent.ListProjects1" [project]="item" ></app-card-project>  
+    </div>
+
+    <div>
+        <app-card-project *ngFor="let item of text.myProjectsComponent.ListProjects2" [project]="item" ></app-card-project>  
+        <div class="max-w-[636px] max-h-[200px] h-auto flex justify-center items-center pt-3">
+            <a class="w-60 h-20 button flex justify-center items-center" href="{{links.github}} " target="_blank">{{text.myProjectsComponent.ButtonText}}</a>
+        </div>
+
+    </div>
+    
+
+</section>

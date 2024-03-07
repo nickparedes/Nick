@@ -10,6 +10,10 @@ export const language = {
     default: 'language'
 }
 
+export const links ={
+    github: 'https://github.com/nickparedes'
+}
+
 
 export const text = {
     spanish :{
@@ -60,6 +64,19 @@ export const text = {
                 {img:'../../../../assets/logo/logo.png'},
             ]
 
+        },
+        myProjectsComponent:{
+            Title: 'Work that I’ve done for the past 8 years',
+            SubTitle:'MY PROJECTS',
+            ListProjects1:[
+                {img:'https://source.unsplash.com/collection/881002', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+                {img:'https://source.unsplash.com/umchkHwkdyM', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+            ],
+            ListProjects2:[
+                {img:'https://source.unsplash.com/daily', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+                {img:'https://source.unsplash.com/category/nature/', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+            ],
+            ButtonText: 'View all projects',
         }
     },
     english:{
@@ -111,6 +128,19 @@ export const text = {
                 {img:'../../../../assets/logo/logo.png'},
             ]
 
+        },
+        myProjectsComponent:{
+            Title: 'Work that I’ve done for the past 8 years',
+            SubTitle:'MY PROJECTS',
+            ListProjects1:[
+                {img:'https://source.unsplash.com/collection/881002', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+                {img:'https://source.unsplash.com/umchkHwkdyM', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+            ],
+            ListProjects2:[
+                {img:'https://source.unsplash.com/daily', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+                {img:'https://source.unsplash.com/category/nature/', title:'Project 1', description:'This is a project that I worked on for a client. It was a great experience and I learned a lot from it.'},
+            ],
+            ButtonText: 'View all projects',
         }
     }
 }
