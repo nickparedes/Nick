@@ -8,7 +8,6 @@ export const language = {
     spanish: 'spanish',
     english: 'english',
     default: 'language'
-
 }
 
 
@@ -28,10 +27,18 @@ export const text = {
             subTitleHeading: 'Un Ingeniero de Software',
             subTitleCountry: 'soy de Perú',
             Paragraph: '"Soy probablemente el ingeniero de software más apasionado con el que tendrás la oportunidad de trabajar. Si tienes un proyecto increíble que requiera habilidades extraordinarias, soy tu persona.',
+        },
+
+        workExperienceComponent: {
+            subTitle: 'WORK EXPERIENCE',
+            title: 'Companies I have worked for in the past.',
+            works: [
+                {id: '01', company: 'Google', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'red'},
+                {id: '02', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'blue'},
+                {id: '03', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'green'},
+                
+            ]
         }
-
-
-
     },
     english:{
         navBarComponent: {
@@ -48,6 +55,16 @@ export const text = {
             subTitleHeading: 'A product designer',
             subTitleCountry: 'based in Italy.',
             Paragraph: 'I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.',
+        },
+        workExperienceComponent: {
+            subTitle: 'WORK EXPERIENCE',
+            title: 'Companies I have worked for in the past.',
+            works: [
+                {id: '01', company: 'Google', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'primary-color'},
+                {id: '02', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'primary-color'},
+                {id: '03', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'primary-color'},
+           
+            ]
         }
     }
 }

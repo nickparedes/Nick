@@ -1,0 +1,13 @@
+
+<section class="px-10 py-10 md:px-28 md:py-40">
+    <div class="pb-2">
+        <h6 class="text-light-grey-color opacity-80">{{text.workExperienceComponent.subTitle}}</h6>
+        <h2 class="text-text-color font-bold text-[32px] max-w-[880px]  overflow md:text-7xl">{{text.workExperienceComponent.title}}</h2>
+    </div>
+    <div class="flex justify-start flex-wrap pt-10 md:pt-20">
+        <app-card-work-experience *ngFor="let item of text.workExperienceComponent.works"  [workExperience]="item" ></app-card-work-experience>
+    </div>
+    
+</section>
+
+

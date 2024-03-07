@@ -9,6 +9,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { BackendComponent } from './components/backend/backend.component';
 import { ExtraOptions } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: "enabled",
@@ -21,11 +23,13 @@ const routerOptions: ExtraOptions = {
     FrontendComponent,
     AboutComponent,
     ContactMeComponent,
-    HomeComponent
+    HomeComponent,
+    WorkExperienceComponent
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    SharedModule,
   ],
   exports: [
     BackendComponent,
