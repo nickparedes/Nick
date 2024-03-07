@@ -3,10 +3,30 @@ div a, ul,li{
     align-items: center;
     height: 100%;
 }
-a {
+li a {
     text-decoration: none;
     color: var(--tx-text-color);
     opacity: 0.7;
     padding: 0 20px;
     text-wrap: nowrap;
+
+    
+}
+
+ul a {
+    &:hover{
+        background: var(--tx-primary-color);
+        color: var(--tx-text-color);
+        opacity: 1 !important;
+    }
+}
+
+.visible {
+    display: block !important;
+    height: calc(100vh - 55px);
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-base-color);
 }

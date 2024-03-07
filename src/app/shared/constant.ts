@@ -16,11 +16,11 @@ export const text = {
     spanish :{
         navBarComponent: {
             menuItem: [
-                { name: 'Home', path: ['/home'], id: "home" , active: true},
+                { name: 'Home', path: ['/home'], id: "home" , active: false},
                 { name: 'Sobre mi', path: ['/about'], id: "about", active: false},
                 { name: 'Backend', path: ['/backend'], id: "backend" , active: false},
                 { name: 'Frontend', path: ['/frontend'], id: "frontend", active: false},
-                { name: 'Contacto', path:['/contact'], id: "contact-me",  active: false},
+                { name: 'Contacto', path:['/contact'], id: "contact-me",  active: true},
             ],
         },
         homeComponent: {
@@ -36,11 +36,11 @@ export const text = {
     english:{
         navBarComponent: {
             menuItem: [
-                { name: 'Home', path: ['/home'], id: "home" , active: true},
+                { name: 'Home', path: ['/home'], id: "home" , active: false},
                 { name: 'About', path: ['/about'], id: "about", active: false},
                 { name: 'Backend', path: ['/backend'], id: "backend" , active: false},
                 { name: 'Frontend', path: ['/frontend'], id: "frontend", active: false},
-                { name: 'Contact me', path:['/contact'], id: "contact-me",  active: false},
+                { name: 'Contact me', path:['/contact'], id: "contact-me",  active: true},
             ]
         },
         homeComponent: {

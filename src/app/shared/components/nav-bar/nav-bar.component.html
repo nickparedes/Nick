@@ -1,8 +1,9 @@
 <section
-  class="flex justify-between content-center flex-wrap w-full max-w-[1900px] h-[88px] px-10 fixed"
+  class="transition-colors duration-10000 flex justify-between content-center flex-wrap w-full max-w-[1900px] h-[55px] px-5 fixed md:h-[88px] md:px-10 z-10"
+  #navBar
 >
-  <div class="flex content-center">
-    <a class="home inicio">
+  <div class="flex content-center" (click)="closeNavbar()">
+    <a class="home inicio" href="#">
       <svg
         width="79"
         height="24"
@@ -17,11 +18,21 @@
       </svg>
     </a>
   </div>
-  <div class="h-full">
-    <ul id="d-menu" class="flex justify-between" #navBar>
-      <li *ngFor="let item of menuItem">
-        <a  href="portfolio#{{item.id}}" [routerLinkActive]="['all-bg-primary']" [ngClass]="{'all-bg-primary': item.id=== 'contact-me'}" (click)="menuActive(item.id)" >{{ item.name }}</a>
+  <button data-collapse-toggle="navbar-default" (click)="toggleMenu()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-light-grey-color rounded-lg md:hidden hover:bg-primary-color focus:outline-none focus:ring-2 focus:light-grey-color dark:text-gray-400" aria-controls="navbar-default" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+    </svg>
+  </button>
+
+  <div class="h-full hidden w-full md:block md:w-auto" [ngClass]="{'visible': isMenuVisible }">
+    <ul id="d-menu" class="flex justify-between max-w-[1900px]" [ngClass]="{'flex-col w-screen relative items-center justify-center': isMenuVisible}" #navBar>
+      <li class="w-full flex justify-center" #menuItems id="portfolio#{{item.id}}" *ngFor="let item of menuItem">
+        <a  class="w-full flex justify-center hover:{{ isMenuVisible ? '': 'all-bg-primary' }}" (click)="closeNavbar()" href="portfolio#{{item.id}}" [ngClass]="{'all-bg-primary': item.active && !isMenuVisible}">
+          {{ item.name }}
+        </a>      
       </li>
     </ul>
   </div>
+
 </section>
