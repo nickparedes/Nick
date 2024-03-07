@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CardSkillSet } from '../../models/interfaces';
 
 @Component({
   selector: 'app-card-skill-set',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-skill-set.component.scss']
 })
 export class CardSkillSetComponent {
-
+  @Input() skills?: CardSkillSet;
+  
 }

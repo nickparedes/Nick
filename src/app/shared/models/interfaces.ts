@@ -5,5 +5,18 @@ export interface CardWorkExperience {
     startDate: string,
     endDate: string, 
     description: string, 
-    color: string
+    color: string,
+}
+
+export interface CardSkillSet{
+    img: string,
+    name: string,
+    description: string,
+}
+
+export interface menuItem{
+    name: string,
+    path: string[],
+    id: string,
+    active: boolean,
 }

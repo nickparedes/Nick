@@ -42,6 +42,24 @@ export const text = {
         aboutComponent: {
             Title: 'Philosophy & values',
             SubTitle: 'I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.',
+        },
+        skillsetComponent: {
+            Title: 'Skillset',
+            SubTitle: 'With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.',
+            Skills: [
+                {img:'src/assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'src/assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'src/assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'src/assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+
+            ],
+            carrousel:[
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+            ]
+
         }
     },
     english:{
@@ -73,6 +91,26 @@ export const text = {
         aboutComponent: {
             Title: 'Philosophy & values',
             SubTitle: 'I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.',
+        },
+        skillsetComponent: {
+            Title: 'Skillset',
+            SubTitle: 'With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.',
+            Skills: [
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+                {img:'../../../../assets/logo/logo.png', name:'Product Design', description:'Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.'},
+
+            ],
+            carrousel:[
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+                {img:'../../../../assets/logo/logo.png'},
+            ]
+
         }
     }
 }

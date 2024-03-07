@@ -5,6 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CardWorkExperienceComponent } from './components/card-work-experience/card-work-experience.component';
 import { CardSkillSetComponent } from './components/card-skill-set/card-skill-set.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CardProjectComponent } from './components/card-project/card-project.component';
 
 
 
@@ -14,6 +16,8 @@ import { CardSkillSetComponent } from './components/card-skill-set/card-skill-se
     FooterComponent,
     CardWorkExperienceComponent,
     CardSkillSetComponent,
+    CarouselComponent,
+    CardProjectComponent,
     
   ],
   imports: [
@@ -23,7 +27,10 @@ import { CardSkillSetComponent } from './components/card-skill-set/card-skill-se
   exports: [
     NavBarComponent,
     FooterComponent,
-    CardWorkExperienceComponent
+    CardWorkExperienceComponent,
+    CardSkillSetComponent,
+    CarouselComponent,
+    CardProjectComponent
   ],
 })
 export class SharedModule { }
