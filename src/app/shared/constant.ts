@@ -38,6 +38,10 @@ export const text = {
                 {id: '03', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'green'},
                 
             ]
+        },
+        aboutComponent: {
+            Title: 'Philosophy & values',
+            SubTitle: 'I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.',
         }
     },
     english:{
@@ -65,6 +69,10 @@ export const text = {
                 {id: '03', company: 'Tivit', position: 'Senior Software Engineer', endDate: '2019', startDate: 'Present', description: 'I currently am the lead designer on the interaction design team for Google Play.', color: 'primary-color'},
            
             ]
+        },
+        aboutComponent: {
+            Title: 'Philosophy & values',
+            SubTitle: 'I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.',
         }
     }
 }

@@ -11,6 +11,7 @@ import { ExtraOptions } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { SkillsetComponent } from './components/skillset/skillset.component';
 
 const routerOptions: ExtraOptions = {
   anchorScrolling: "enabled",
@@ -24,7 +25,8 @@ const routerOptions: ExtraOptions = {
     AboutComponent,
     ContactMeComponent,
     HomeComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    SkillsetComponent
   ],
   imports: [
     CommonModule,
