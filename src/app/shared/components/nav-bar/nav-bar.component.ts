@@ -1,4 +1,4 @@
-import {  Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {  AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
 import { LocalStorageService } from '../../services/local-storage.service';
 import { Router } from '@angular/router';
 import { language, text } from '../../constant';
@@ -7,7 +7,7 @@ import { language, text } from '../../constant';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit, AfterViewInit {
   
   @ViewChild('navBar') navBar! : ElementRef;
 
@@ -23,11 +23,16 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
 
-      this.viewPortWidth = window.innerWidth;
-      console.log(this.viewPortWidth)
-      if(this.viewPortWidth < 640){
-        this.isMenuVisible = false;
-      }
+
+  }
+
+  ngAfterViewInit(){
+    this.viewPortWidth = window.innerWidth;
+    console.log(this.viewPortWidth)
+    if(this.viewPortWidth < 641){
+      this.isMenuVisible = false;
+      this.renderer2.addClass(this.navBar.nativeElement, 'bg-base-color')
+    }
   }
 
   toggleMenu() {
