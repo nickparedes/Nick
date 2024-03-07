@@ -1,5 +1,5 @@
 <section
-  class="transition-colors duration-10000 flex justify-between content-center flex-wrap w-full max-w-[1900px] h-[55px] px-5 fixed md:h-[88px] md:px-10 z-10"
+  class="transition-colors duration-500 flex justify-between content-center flex-wrap w-full max-w-[1900px] h-[55px] px-5 fixed md:h-[88px] md:px-10 z-10 "
   #navBar
 >
   <div class="flex content-center" (click)="closeNavbar()">
@@ -25,8 +25,8 @@
     </svg>
   </button>
 
-  <div class="h-full hidden w-full md:block md:w-auto" [ngClass]="{'visible': isMenuVisible }">
-    <ul id="d-menu" class="flex justify-between max-w-[1900px]" [ngClass]="{'flex-col w-screen relative items-center justify-center': isMenuVisible}" #navBar>
+  <div class="h-full hidden w-full md:block md:w-auto " [ngClass]="{'visible': isMenuVisible }">
+    <ul id="d-menu" class="flex justify-between max-w-[1900px] transition-transform" [ngClass]="{'flex-col w-screen relative items-center justify-center': isMenuVisible}" #navBar>
       <li class="w-full flex justify-center" #menuItems id="portfolio#{{item.id}}" *ngFor="let item of menuItem">
         <a  class="w-full flex justify-center hover:{{ isMenuVisible ? '': 'all-bg-primary' }}" (click)="closeNavbar()" href="portfolio#{{item.id}}" [ngClass]="{'all-bg-primary': item.active && !isMenuVisible}">
           {{ item.name }}

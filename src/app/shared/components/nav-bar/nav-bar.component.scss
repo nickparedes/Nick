@@ -30,3 +30,7 @@ ul a {
     width: 100%;
     background: var(--bg-base-color);
 }
+
+.transition-down {
+    transition: transform 0.8s ease;
+  }

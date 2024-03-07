@@ -32,10 +32,11 @@ export class NavBarComponent implements OnInit {
 
   toggleMenu() {
     this.isMenuVisible  = !this.isMenuVisible ;
-  }
+      }
 
   closeNavbar(){
     this.isMenuVisible = false;
+
   }
 
 
@@ -44,24 +45,19 @@ export class NavBarComponent implements OnInit {
     this.viewPortWidth  = window.innerWidth;
     if(this.viewPortWidth > 640){
       this.isMenuVisible = false;
+      this.renderer2.removeClass(this.navBar.nativeElement, 'bg-base-color')
+    }else{
+      this.renderer2.addClass(this.navBar.nativeElement, 'bg-base-color')
     }
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event){
-    let x = 0;
-    console.log(window.pageYOffset)
+    let x = 88;  
     if(this.viewPortWidth > 640){
-      console.log(x)
-      x = 88;
-    }else{
-      x = 55;
+      window.scrollY > x ? this.renderer2.addClass(this.navBar.nativeElement, 'bg-base-color') :this.renderer2.removeClass(this.navBar.nativeElement, 'bg-base-color')
     }
-     if(window.pageYOffset > x){
-       this.renderer2.addClass(this.navBar.nativeElement, 'bg-base-color')
-     }else{
-        this.renderer2.removeClass(this.navBar.nativeElement, 'bg-base-color')
-     }
+
   }
   
 }
