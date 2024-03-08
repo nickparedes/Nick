@@ -1,29 +1,30 @@
-<div class="bg-base-color flex w-screen max-w-[1900px] h-full  max-h-[990px] py-20  md: flex-wrap md: pt-[55px] md: pb-0 md:h-screen">
+<div class="bg-base-color flex justify-center w-screen max-w-[1900px] h-full  max-h-[600px] py-20  md: flex-wrap md: pt-[55px] md: pb-0 md:h-screen">
     <div class="w-full flex md:w-2/4 flex-col justify-start overflow-hidden p-16">
         <h2 class="flex text-6xl text-text-color text-center">Let’s talk business</h2>
         <br>
         <h3 class="flex text-lg text-light-grey-color text-center">Now that you know a lot about me, let me know if you are interested to work with me.</h3>
     </div>
-    <div class="bg-red-100 w-full md:w-2/4 flex justify-center items-center overflow-hidden">
-        <form class="flex flex-col w-full">
-            <mat-form-field>
-              <mat-label>Name</mat-label>
-              <input matInput placeholder="Nombre">
-            </mat-form-field>
-          
-            <mat-form-field>
-              <mat-label>Correo Electrónico</mat-label>
-              <input matInput placeholder="Correo Electrónico" type="email">
-            </mat-form-field>
-          
-            <mat-form-field>
-              <mat-label>Contraseña</mat-label>
-              <input matInput placeholder="Contraseña" type="password">
-            </mat-form-field>
-          
-            <button mat-raised-button color="primary">Enviar</button>
-        </form>
-    </div>
+
+      <form class="w-full max-w-xl p-4">
+
+        <div class="mb-5">
+          <label for="password" class="block mb-2 text-sm font-medium text-text-color ">Name</label>
+          <input type="name" id="name" class="bg-level-1-color border border-light-grey-color text-text-color text-sm rounded-lg  block w-full p-2.5 " placeholder="Name" required />
+        </div>
+        <div class="mb-5">
+          <label for="email" class="block mb-2 text-sm font-medium text-text-color ">Your email</label>
+          <input type="email" id="email" class="bg-level-1-color border border-light-grey-color text-text-color text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@example.com" required />
+        </div>
+        <div > 
+          <label for="message" class="block mb-2 text-sm font-medium text-text-color ">Your message</label>
+          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-text-color bg-level-1-color  rounded-lg border border-light-grey-color focus:ring-blue-500 focus:border-blue-500 " placeholder="Leave a comment..."></textarea>
+        </div>
+        <br>
+  
+        <button type="submit" class="text-white bg-primary-color  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm w-full sm:w-full px-5 py-2.5 text-center ">Submit</button>
+      </form>
+  
+
 
 
 </div>
