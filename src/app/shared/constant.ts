@@ -11,7 +11,12 @@ export const language = {
 }
 
 export const links ={
-    github: 'https://github.com/nickparedes'
+    github: 'https://github.com/nickparedes',
+    facebook: '',
+    linkedin: 'https://www.linkedin.com/in/nickparedes/',
+    mail:'',
+    whatsapp:'',
+    instagram:'',
 }
 
 
