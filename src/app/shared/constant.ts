@@ -67,6 +67,12 @@ export const text = {
                 {img:'../../../../assets/logo/logo.png'},
                 {img:'../../../../assets/logo/logo.png'},
                 {img:'../../../../assets/logo/logo.png'},
+            ],
+            Technologies: [
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
             ]
 
         },
@@ -135,6 +141,15 @@ export const text = {
                 {img:'../../../../assets/logo/logo.png'},
                 {img:'../../../../assets/logo/logo.png'},
                 {img:'../../../../assets/logo/logo.png'},
+            ],
+            Technologies: [
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/collection/881002'},
+                {img:'https://source.unsplash.com/daily'},
+                {img:'https://source.unsplash.com/daily'}
+
             ]
 
         },

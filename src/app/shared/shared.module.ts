@@ -7,6 +7,7 @@ import { CardWorkExperienceComponent } from './components/card-work-experience/c
 import { CardSkillSetComponent } from './components/card-skill-set/card-skill-set.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 
 
 
@@ -18,6 +19,7 @@ import { CardProjectComponent } from './components/card-project/card-project.com
     CardSkillSetComponent,
     CarouselComponent,
     CardProjectComponent,
+    TechnologiesComponent,
     
   ],
   imports: [
@@ -30,7 +32,8 @@ import { CardProjectComponent } from './components/card-project/card-project.com
     CardWorkExperienceComponent,
     CardSkillSetComponent,
     CarouselComponent,
-    CardProjectComponent
+    CardProjectComponent,
+    TechnologiesComponent
   ],
 })
 export class SharedModule { }
