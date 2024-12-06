@@ -1,0 +1,22 @@
+@import "./markdown.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Jenthill';
+    src: url('/src/assets/fonts/jenthill/Jenthill.ttf') format('truetype');
+  }
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('/src/assets/fonts/mosk/Mosk.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/src/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
